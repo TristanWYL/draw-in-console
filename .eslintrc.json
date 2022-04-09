@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["standard"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "no-throw-literal": "off",
+    "quotes": [2, "double"]
+  },
+  "overrides": [
+      {
+          "files":[
+              "test/**/*.test.ts"
+          ],
+          "env": {
+              "jest": true
+          }
+      }
+  ]
+}
